@@ -16,9 +16,9 @@ Remember,</p>
 <p class="has-line-data" data-line-start="18" data-line-end="19"><strong>Note:</strong> For every feature, bug or chore, you must create a new branch.</p>
 <p class="has-line-data" data-line-start="20" data-line-end="22">Example of a feature?<br>
 User Login: Branch naming convention follow this pattern: feat/user-login (- - - lower case and separated by dashes)</p>
-<h3 class="has-line-data" data-line-start="20" data-line-end="22">REMINDER<br>
+<h4 class="has-line-data" data-line-start="20" data-line-end="22">REMINDER<br>
 All Pull Requests should be done on a new git branch, do a git pull to get the latest changes, do your work in a new branch and create a Pull Request.
-</h3>
+</h4>
 <p class="has-line-data" data-line-start="23" data-line-end="25">Example of a bug?<br>
 Home Page Typo: Branch naming convention follow this pattern: bug/homepage-typo</p>
 <p class="has-line-data" data-line-start="26" data-line-end="28">Example of a chore?<br>
