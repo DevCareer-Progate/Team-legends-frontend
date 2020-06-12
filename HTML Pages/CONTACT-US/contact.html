@@ -2,8 +2,186 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .hero {
+        /* background: linear-gradient(177.32deg, #fd749b -12.41%, #281ac8 88.56%); */
+        background-size: cover;
+        background-image: url("bg.png");
+        display: flex;
+        justify-content: space-between;
+        padding: 0 148px 150px 150px;
+      }
+      .hero-text {
+        max-width: 475px;
+        margin-top: 152px;
+      }
+      .hero p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ffffff;
+      }
+      .hero h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        color: #ffffff;
+      }
+      .hero h5 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #ffffff;
+      }
+      .form-area {
+        max-width: 732px;
+        display: block;
+        margin: auto;
+        z-index: 100;
+        position: relative;
+      }
+      .form p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 58px;
+      }
+      .button {
+        background: linear-gradient(179.37deg, #fd749b -13.56%, #281ac8 158.3%);
+        border-radius: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        padding: 15px 50px;
+        margin-top: 50px;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+      }
+      .input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .input input {
+        width: 40%;
+        height: 60px;
+        padding: 0 20px;
+        background: #ffffff;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      .textarea {
+        resize: none;
+        width: 100%;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      .map {
+        margin-top: 93px;
+      }
+      @keyframes example {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        50% {
+          left: -2000px;
+          top: 200px;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @media screen and (max-width: 786px) {
+        .hero {
+          flex-direction: column;
+          padding: 20px;
+        }
+        .about-image {
+          width: 100%;
+        }
+        .hero-text {
+          margin-top: 50px;
+        }
+        .form-area {
+          padding: 20px;
+        }
+        .map img {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <div class="hero">
+        <div class="hero-text">
+          <p>HOME/CONTACT US</p>
+          <h3>24/7 Customer support Including weekends.</h3>
+          <h5>
+            We’re always there ti help regardless the number of queries at hand.
+          </h5>
+        </div>
+        <div><img src="about.svg" / class="about-image"></div>
+      </div>
+      <div class="body">
+        <div class="form-area">
+          <div class="form">
+            <p>
+              Please note that all message will be replied within the next
+              12hours
+            </p>
+            <form action="">
+              <div class="input">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+              </div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Comment"
+                class="textarea"
+              ></textarea>
+              <button class="button">publish</button>
+            </form>
+          </div>
+          <div class="map">
+            <img src="map.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
