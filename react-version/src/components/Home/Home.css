@@ -518,7 +518,6 @@ ul.instagram-feed li {
 }
 section:hover .img-zoom {
   display: block;
-  animation: zoomimg 2s infinite;
   -webkit-animation: zoomimg 2s infinite;
 }
 @-webkit-keyframes zoomimg {
