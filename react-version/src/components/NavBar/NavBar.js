@@ -1,18 +1,31 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../Home/Home.css";
-//import images
+import { Link } from "react-router-dom";
+import SignIn from "../SignIn/SignIn";
 
+//import images
 import Logo from "../img/Logo.svg";
 
 const NavBar = () => {
+  //state
+  const [logModal, setLoginModal] = useState(false);
   //refs
   const refMenu = useRef();
   const priMenu = useRef();
-  //state
 
+  //toggleMenu is for responsive toggler
   const toggleMenu = () => {
     refMenu.current.classList.toggle("toggled");
     priMenu.current.classList.toggle("open");
+  };
+
+  //modal
+  let modal;
+  if (logModal) {
+    modal = <SignIn />;
+  }
+  const handleModal = () => {
+    setLoginModal(true);
   };
   return (
     <header>
@@ -78,83 +91,7 @@ const NavBar = () => {
                         className="modal fade"
                         id="sellBitcoin"
                         role="dialog"
-                      >
-                        <div className="modal-dialog">
-                          {/* <!-- Modal content--> */}
-                          <div className="modal-content">
-                            <div className="modal-header">
-                              <button
-                                type="button"
-                                className="close"
-                                data-dismiss="modal"
-                              >
-                                &times;
-                              </button>
-                              <h4 style={{ color: "red" }}>
-                                <span className="glyphicon glyphicon-lock"></span>{" "}
-                                Login
-                              </h4>
-                            </div>
-                            <div className="modal-body">
-                              <form role="form">
-                                <div className="form-group">
-                                  <label for="usrname">
-                                    <span className="glyphicon glyphicon-user"></span>{" "}
-                                    Username
-                                  </label>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    id="usrname"
-                                    placeholder="Enter email"
-                                  />
-                                </div>
-                                <div className="form-group">
-                                  <label for="psw">
-                                    <span className="glyphicon glyphicon-eye-open"></span>{" "}
-                                    Password
-                                  </label>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    id="psw"
-                                    placeholder="Enter password"
-                                  />
-                                </div>
-                                <div className="checkbox">
-                                  <label>
-                                    <input type="checkbox" value="" checked />
-                                    Remember me
-                                  </label>
-                                </div>
-                                <button
-                                  type="submit"
-                                  className="btn btn-default btn-success btn-block"
-                                >
-                                  <span className="glyphicon glyphicon-off"></span>{" "}
-                                  Login
-                                </button>
-                              </form>
-                            </div>
-                            <div className="modal-footer">
-                              <button
-                                type="submit"
-                                className="btn btn-default btn-default pull-left"
-                                data-dismiss="modal"
-                              >
-                                <span className="glyphicon glyphicon-remove"></span>{" "}
-                                Cancel
-                              </button>
-                              <p>
-                                Not a member? <a href="#">Sign Up</a>
-                              </p>
-                              <p>
-                                Forgot <a href="#">Password?</a>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      ></div>
                       <a className="dropdown-item" href="#">
                         Sell Giftcard
                       </a>
@@ -162,15 +99,23 @@ const NavBar = () => {
                   </div>
                 </li>
                 <li className="menu-item">
-                  <a href="#" className="button btn">
+                  <Link
+                    to="/login"
+                    className="button btn"
+                    style={{ transition: "all ease 0.3s" }}
+                    onClick={handleModal}
+                    data-toggle="modal"
+                    data-target="#signUp"
+                  >
                     Login
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
+      {logModal && modal}
     </header>
   );
 };
