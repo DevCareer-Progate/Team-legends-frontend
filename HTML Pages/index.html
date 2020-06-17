@@ -28,6 +28,7 @@
   	<link rel="stylesheet" type="text/css" href="css/slick.css">
   	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/modals.css">
 </head>
 <body>
 	<header>
@@ -55,46 +56,317 @@
 									  </a>
 
 									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
-									    <a class="dropdown-item" href="#sellBitcoin" data-toggle="modal" >Sell Bitcoin</a>
-									   	<!-- Modal -->
-										  <div class="modal fade" id="sellBitcoin" role="dialog">
-										    <div class="modal-dialog">
-
-										      <!-- Modal content-->
-										      <div class="modal-content">
-										        <div class="modal-header">
-										          <button type="button" class="close" data-dismiss="modal">&times;</button>
-										          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
-										        </div>
-										        <div class="modal-body">
-										          <form role="form">
-										            <div class="form-group">
-										              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-										              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-										            </div>
-										            <div class="form-group">
-										              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-										              <input type="text" class="form-control" id="psw" placeholder="Enter password">
-										            </div>
-										            <div class="checkbox">
-										              <label><input type="checkbox" value="" checked>Remember me</label>
-										            </div>
-										            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-										          </form>
-										        </div>
-										        <div class="modal-footer">
-										          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-										          <p>Not a member? <a href="#">Sign Up</a></p>
-										          <p>Forgot <a href="#">Password?</a></p>
-										        </div>
-										      </div>
-										    </div>
-										  </div>
-									    <a class="dropdown-item" href="#">Sell Giftcard</a>
+									    <a class="dropdown-item" href="#bitcoinModal" data-toggle="modal" >Sell Bitcoin</a>									
+										  
+									    <a class="dropdown-item" href="#giftcardsModal" data-toggle="modal">Sell Giftcard</a>
 									</div>
 								</div>
 							</li>
-							<li class="menu-item"><a href="#" class="button btn">Login</a></li>					
+							<!-- Giftcards Modal -->
+							<div class="modal" id="giftcardsModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered modal-container" >
+									<div class="modal-content">
+									  <div class="modal-body">
+										  <div class="title">GOT GIFTCARDS FOR SELL?</div>
+										  <p style="text-align: center;">choose your prefered card to continue the exchange process</p>
+										  <div class="content">
+										<a href="#amazon"data-toggle="modal" ><img  class="img-responsive"  src="img\Amazon.svg" alt=""></a>
+										<a href="#itunes"data-toggle="modal"><img  class="img-responsive" src="img\iTunes.svg" alt=""></a>
+										<a href="#googlePlay"data-toggle="modal"><img  class="img-responsive" src="img\Google Play.svg" alt=""></a>
+										<a href="#steam" data-toggle="modal"><img  class="img-responsive" src="img\Steam.svg" alt=""></a>
+										<a href="#others"data-toggle="modal"><img  class="img-responsive" src="img\Others.svg" alt=""></a>
+									  </div>
+									  </div>									 
+									</div>
+								</div>
+								<!-- Amazon card Modal -->
+								<div class="modal" id="amazon" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered modal-box" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\Amazon.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every Amazon card on this platform</div>
+											<hr class="hr-line">          
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Type</option>
+												</select>
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Currency</option>
+												</select>
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+												<div class="naira">
+												 <input class="dash-border" style="border: 1.5px dashed #FD749B !important; border-radius: 5px; border-style: none;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>          
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								
+								<!-- itunes card Modal-->
+								<div class="modal" id="itunes" role="dialog" tabindex="-1" aria-labelledby="itunes Conversion rate" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered modal-box" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5itunes.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\iTunes.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every App Store itunes card on this platform</div>
+											<hr class="hr-line">            
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Type</option>
+												</select>
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Currency</option>
+												</select>
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+												<div class="">
+												<input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>            
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>
+
+								<!--Google Play Modal -->
+								<div class="modal" id="googlePlay"  role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered modal-box" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5play.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\Google Play.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every Google Play card on this platform</div>
+											<hr class="hr-line">
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Type</option>
+												</select>
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Currency</option>
+												</select>
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+												<div class="">
+												 <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>        
+											</div>
+										</div>					
+									  </div>
+									</div>
+								</div>
+								
+								<!-- Steam card Modal -->
+								<div class="modal" id="steam" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered modal-box" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5steam.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\Steam.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every Steam card on this platform</div>
+											<hr class="hr-line">
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Type</option>
+												</select>
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Currency</option>
+												</select>
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+												<div class="">
+												 <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>										  
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<!-- Other Cards Modal -->
+								<div class="modal" id="others" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered modal-box" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5others.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\Others.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every Voucher on this platform</div>
+											<hr class="hr-line">
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Type</option>
+												</select>
+												<select style="font-size: 14px;" class="form-control form-control-lg">
+												  <option class="option">Card Currency</option>
+												</select>
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+												<div class="">
+												 <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>										  
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>								
+							</div>	
+							<!-- giftcards Modal ends here-->						
+							
+							<!-- Bitcoin Modals -->
+							<div class="modal" id="bitcoinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered bitcoin-modal" >
+									<div class="modal-content">
+									  <div class="modal-body">
+										  <div class="title sell-coin">Sell Bitcoin</div>
+										  <p style="text-align: center;">choose your prefered product to continue</p>
+										  <div class="btc-Etc-modal">
+												<a href="#bitcoin"data-toggle="modal" ><img  class="img-responsive"  src="img\Card-1.svg" alt=""></a>
+												<a href="#ethereum"data-toggle="modal"><img  class="img-responsive" src="img\Card-2.svg" alt=""></a>
+										 </div>
+									  </div>     
+									</div>
+								</div>
+								<div class="modal" id="bitcoin" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered coin-modal" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5bitcoin.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\Card-1.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for 0.1 BTC on this platform</div>
+											<hr class="hr-line">           
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Bitcoin Value">
+												<div class="">
+												 <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px; border-style: none;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>										  
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<!-- Ethereum Modal-->
+								<div class="modal" id="ethereum" role="dialog" tabindex="-1" aria-labelledby="itunes Conversion rate" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered coin-modal" >
+									  <div class="modal-content">
+										<div class="amazon-radial">
+										  <img class="ellipse" src="img\Ellipse 5ETH.png" alt="">
+										  <div class="amazon">
+											<img  class="img-amazon" src="img\Card-2.svg" alt="">
+										  </div>
+										</div>
+										<div class="modal-body">
+											<div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every 0.1 ETH on this platform</div>
+											<hr class="hr-line">								  										   
+											<div class="giftcard-content">
+											  <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+											  <div class="modal-form">
+												<input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Ethereum Value">
+												<div class="">
+												 <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+												</div>
+												<div class="modal-btn">
+												  <button class="proceed-btn">proceed</button>
+												</div>
+											  </div>										
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+								
+							<li class="menu-item"><a href="#log-btn" class="button btn" data-toggle="modal">Login</a></li>	
+							<!-- Login Modal -->
+							<div class="modal fade" id="log-btn" role="dialog">
+								<div class="modal-dialog">
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+									</div>
+									<div class="modal-body">
+									  <form role="form">
+										<div class="form-group">
+										  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+										  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+										</div>
+										<div class="form-group">
+										  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+										  <input type="text" class="form-control" id="psw" placeholder="Enter password">
+										</div>
+										<div class="checkbox">
+										  <label><input type="checkbox" value="" checked>Remember me</label>
+										</div>
+										<button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+									  </form>
+									</div>
+									<div class="modal-footer">
+									  <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+									  <p>Not a member? <a href="#">Sign Up</a></p>
+									  <p>Forgot <a href="#">Password?</a></p>
+									</div>
+								  </div>
+								</div>
+							  </div>				
 						</ul>
 					</div>
 				</div>
