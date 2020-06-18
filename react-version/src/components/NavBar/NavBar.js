@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../Home/Home.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import SignIn from "../SignIn/SignIn";
 
 //import images
@@ -49,23 +49,31 @@ const NavBar = () => {
                 className="primary-menu row justify-content-between align-items-center h-100 p-0 m-0"
                 ref={priMenu}
               >
-                <li className="menu-item active">
-                  <a href="#">Home</a>
+                <li className="menu-item ">
+                  <NavLink to="/" activeStyle={{ color: "#cfe5cf" }}>
+                    Home
+                  </NavLink>
                 </li>
                 <li className="menu-item">
-                  <a href="#">About Us</a>
+                  <NavLink to="/about" activeStyle={{ color: "#e7305b" }}>
+                    About Us
+                  </NavLink>
                 </li>
                 <li className="menu-item">
-                  <a href="#">Blog</a>
+                  <NavLink to="/blog" activeStyle={{ color: "#e7305b" }}>
+                    Blog
+                  </NavLink>
                 </li>
                 <li className="menu-item">
-                  <a href="#">Contact Us</a>
+                  <NavLink to="/contact" activeStyle={{ color: "#e7305b" }}>
+                    Contact Us
+                  </NavLink>
                 </li>
                 <li className="menu-item offset-md-0">
                   <div className="dropdown">
-                    <a
+                    <NavLink
                       className="dropdown-toggle whitetxt"
-                      href="#"
+                      to="/sell"
                       role="button"
                       id="dropdownMenu"
                       data-toggle="dropdown"
@@ -73,7 +81,7 @@ const NavBar = () => {
                       aria-expanded="false"
                     >
                       Sell Bitcoin/ Giftcard
-                    </a>
+                    </NavLink>
 
                     <div
                       className="dropdown-menu dropdown-menu-right"
@@ -99,16 +107,17 @@ const NavBar = () => {
                   </div>
                 </li>
                 <li className="menu-item">
-                  <Link
+                  <NavLink
                     to="/login"
                     className="button btn"
-                    style={{ transition: "all ease 0.3s" }}
+                    style={{ transition: "all ease 0.3s", marginTop: "0px" }}
                     onClick={handleModal}
                     data-toggle="modal"
                     data-target="#signUp"
+                    activeStyle={{ color: "#cfe5cf" }}
                   >
                     Login
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
