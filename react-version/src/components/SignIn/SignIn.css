@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-* {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-}
 /* css for input texts */
 
 input[type="text"] {

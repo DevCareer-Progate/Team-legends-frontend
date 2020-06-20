@@ -1,14 +1,18 @@
 import React, { useRef, useState } from "react";
 import "../Home/Home.css";
-import { NavLink } from "react-router-dom";
+import "../SignIn/SignIn.css";
+import { NavLink, Link } from "react-router-dom";
 import SignIn from "../SignIn/SignIn";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 //import images
 import Logo from "../img/Logo.svg";
 
 const NavBar = () => {
   //state
-  const [logModal, setLoginModal] = useState(false);
+  const [logModal, setLoginModal] = useState(null);
+  const [signUpModal, setSignupModal] = useState(false);
   //refs
   const refMenu = useRef();
   const priMenu = useRef();
@@ -19,13 +23,12 @@ const NavBar = () => {
     priMenu.current.classList.toggle("open");
   };
 
-  //modal
-  let modal;
-  if (logModal) {
-    modal = <SignIn />;
-  }
-  const handleModal = () => {
-    setLoginModal(true);
+  const handleLoginModal = () => {
+    console.log("modal on", logModal);
+    return setLoginModal(true);
+  };
+  const closeLoginModal = () => {
+    setLoginModal(false);
   };
   return (
     <header>
@@ -106,7 +109,7 @@ const NavBar = () => {
                     </div>
                   </div>
                 </li>
-                <li className="menu-item">
+                {/* <li className="menu-item">
                   <NavLink
                     to="/login"
                     className="button btn"
@@ -118,13 +121,46 @@ const NavBar = () => {
                   >
                     Login
                   </NavLink>
+                </li> */}
+                <li className="menu-item">
+                  <div className="dropdown">
+                    <NavLink
+                      className="dropdown-toggle whitetxt button btn"
+                      style={{ transition: "all ease 0.3s", marginTop: "0px" }}
+                      role="button"
+                      to=" "
+                      data-toggle="modal"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      LOGIN
+                    </NavLink>
+
+                    <div
+                      className="dropdown-menu dropdown-menu-right"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <Link
+                        className="dropdown-item"
+                        onClick={handleLoginModal}
+                      >
+                        Log In
+                      </Link>
+
+                      {/* <!-- Modal --> */}
+                      <div className="modal fade" id="" role="dialog"></div>
+                      <Link className="dropdown-item">Sign UP</Link>
+                    </div>
+                    <SignIn show={logModal} click={closeLoginModal} />
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-      {logModal && modal}
     </header>
   );
 };
