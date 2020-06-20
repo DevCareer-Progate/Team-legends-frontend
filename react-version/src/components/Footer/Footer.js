@@ -1,5 +1,6 @@
 import React from "react";
 import "../Home/Home.css";
+import { Link } from "react-router-dom";
 
 //import images
 import footerLogo from "../img/logofooter.svg";
@@ -12,55 +13,55 @@ const Footer = () => {
         <div className="container">
           <div className="row m-0 p-0 w-100">
             <div className="col-12 col-md-6 col-xl-4 text-center text-md-left">
-              <a href="#" className="d-inline-block mb-4">
+              <Link to="/" className="d-inline-block mb-4">
                 <img src={footerLogo} className="img-fluid" />
-              </a>
+              </Link>
               <p className="small gray2 my-3">
                 Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
                 rhoncus augue. Fusce vel metus pharetra, fermentum
               </p>
               <div className="row m-0 p-0 social-link mb-5 text-center text-md-left justify-content-left">
-                <a href="#" className="d-inline-block mr-3 whitetxt">
+                <Link to="/" className="d-inline-block mr-3 whitetxt">
                   <i className="link fab fa-google-plus-g"></i>
-                </a>
-                <a href="#" className="d-inline-block mr-3 whitetxt">
+                </Link>
+                <Link to="/" className="d-inline-block mr-3 whitetxt">
                   <i className="link fab fa-facebook-square"></i>
-                </a>
-                <a href="#" className="d-inline-block mr-3 whitetxt">
+                </Link>
+                <Link to="/" className="d-inline-block mr-3 whitetxt">
                   <i className="link fab fa-twitter"></i>
-                </a>
-                <a href="#" className="d-inline-block mr-3 whitetxt">
+                </Link>
+                <Link to="/" className="d-inline-block mr-3 whitetxt">
                   <i className="link fab fa-instagram"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-6 col-xl-2 text-center text-md-left">
               <h5 className="whitetxt mb-4">CoinBase Links</h5>
               <ul className="secondary-menu">
                 <li>
-                  <a href="#" className="gray2">
+                  <Link to="/" className="gray2">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="gray2">
+                  <Link to="/about" className="gray2">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="gray2">
+                  <Link to="/blog" className="gray2">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="gray2">
+                  <Link to="/" className="gray2">
                     Sell
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="gray2">
+                  <Link to="/" className="gray2">
                     Contact us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -68,24 +69,16 @@ const Footer = () => {
               <h5 className="whitetxt mb-4">Contact Us</h5>
               <ul className="secondary-menu">
                 <li>
-                  <p href="#" className="gray2">
-                    (+123) 456789078
-                  </p>
+                  <p className="gray2">(+123) 456789078</p>
                 </li>
                 <li>
-                  <p href="#" className="gray2">
-                    Coinbase@yahoo.com
-                  </p>
+                  <p className="gray2">Coinbase@yahoo.com</p>
                 </li>
                 <li>
-                  <p href="#" className="gray2">
-                    Address goes here
-                  </p>
+                  <p className="gray2">Address goes here</p>
                 </li>
                 <li className="mt-5">
-                  <p href="#" className="gray2">
-                    Download Our App
-                  </p>
+                  <p className="gray2">Download Our App</p>
                 </li>
               </ul>
             </div>

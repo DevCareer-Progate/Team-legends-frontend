@@ -1,0 +1,39 @@
+.signup-overlay {
+  background-color: rgba(22, 9, 9, 0.9);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+button {
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+}
+.inner {
+  background-color: rgb(249, 251, 252);
+  padding: 2.3rem;
+  margin-top: 2.3rem;
+  height: 90vh;
+  border-radius: 30px;
+}
+.signup-heading {
+  /* font-style: normal; */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  background-image: linear-gradient(
+    179.29deg,
+    #fd749b -13.56%,
+    #281ac8 158.3%
+  ) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}

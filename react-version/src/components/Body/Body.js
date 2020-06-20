@@ -87,15 +87,15 @@ const Body = () => {
                   <table className="table table-borderless table-hover">
                     <thead className="text-center">
                       <tr>
-                        <th scope="col" colspan="2">
+                        <th scope="col" colSpan="2">
                           <h5 className="big gradient-txt text-left pl-5">
                             OUR RATES
                           </h5>
                         </th>
-                        <th scope="col" colspan="2">
+                        <th scope="col" colSpan="2">
                           <h5 className="big gradient-txt">OUR RESERVES</h5>
                         </th>
-                        <th scope="col" colspan="2">
+                        <th scope="col" colSpan="2">
                           <h5 className="big gradient-txt">LATEST EXCHANGES</h5>
                         </th>
                       </tr>
@@ -104,8 +104,8 @@ const Body = () => {
                       <tr>
                         <th scope="row"></th>
                         <td></td>
-                        <td colspan="2"></td>
-                        <td colspan="2">
+                        <td colSpan="2"></td>
+                        <td colSpan="2">
                           <div className="w-75 mr-0 ml-auto latest-exchange">
                             <button>8 hours ago</button>
                           </div>
@@ -124,7 +124,7 @@ const Body = () => {
                             We Buy @ <span className="strong">₦370/$</span>
                           </p>
                         </td>
-                        <td colspan="2">
+                        <td colSpan="2">
                           <div className="rate">
                             <div>
                               <img
@@ -139,7 +139,7 @@ const Body = () => {
                             </p>
                           </div>
                         </td>
-                        <td colspan="2">
+                        <td colSpan="2">
                           <div className="w-75 mr-0 ml-auto latest-exchange">
                             <div className="text-right">
                               <p className="small">
@@ -166,7 +166,7 @@ const Body = () => {
                             We Buy @ <span className="strong">₦370/$</span>
                           </p>
                         </td>
-                        <td colspan="2">
+                        <td colSpan="2">
                           <div className="rate">
                             <div className="">
                               <img
@@ -186,7 +186,7 @@ const Body = () => {
                             </div>
                           </div>
                         </td>
-                        <td colspan="2">
+                        <td colSpan="2">
                           <div className="w-75 mr-0 ml-auto latest-exchange">
                             <div className="text-right">
                               <p className="small">
