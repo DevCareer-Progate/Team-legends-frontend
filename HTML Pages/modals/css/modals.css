@@ -1,0 +1,309 @@
+/* dropdown menu */
+
+.dropdown-menu.dropdown-menu-right {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 0;
+}
+.dropdown-menu.dropdown-menu-right a {
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 10px 15px;
+}
+.dropdown-menu.dropdown-menu-right a:hover {
+  color: #fff;
+  background: linear-gradient(178.46deg, #FD749B -13.56%, #281AC8 158.3%);
+}
+
+/* giftcards Modal */
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 30px;
+}
+
+/* bitcoin Modals*/
+
+.btc-Etc-modal{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin: 30px 55px;
+}
+
+.btc-Etc-modal a{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.modal-dialog{
+  max-width: 60vw;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box{
+  margin-top: 100px;
+}
+
+.img-responsive{
+  width: 100%;
+  height: 98%;
+}
+
+.ellipse{
+width: 100%;
+margin: auto;
+}
+.modal-content{
+  border-radius: 26px !important;
+}
+
+/* giftcards Title */
+
+.title{
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  background: -webkit-linear-gradient(179.77deg, #FD749B -13.56%, #281AC8 158.3%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.sell-coin{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+
+.content a{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+@media(max-width: 760px){
+  .content{
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+
+  .btc-Etc-modal{
+  grid-template-columns: 1fr  ;
+  margin: auto;
+}
+
+.amazon-radial{
+ margin: auto;
+}
+
+.modal-dialog{
+ max-width: 94vw;
+ width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.modal-container{
+  margin-top: 200px;
+}
+
+.modal-box{
+  margin: 150px auto auto;
+}
+
+.giftcard-content{
+  width: 50vw !important;
+  text-align: center;
+  margin: auto;
+}
+
+.bitcoin-modal{
+  margin: 150px auto auto;
+}
+
+.dash-border{
+  width: 30vw !important;
+}
+
+.amazon{
+  margin-top: -150px !important;
+  text-align: center;
+}
+
+.conversion-text{
+  text-align: center;
+  width: 40vw !important;
+  margin: auto;
+} 
+
+.modal-content {
+height: auto;
+min-height: 100%;
+}
+
+}
+
+@media(max-width: 680px){
+  .content{
+    grid-template-columns: 1fr;
+    height: 100%;
+    margin: auto auto auto 10px;
+  }
+
+  .modal-dialog{
+    max-width: 90vw;
+    width: 100%;
+    margin: 500px auto auto;
+    height: 100%;
+  }
+
+  .modal-container{
+    margin-top: 800px;
+  }
+
+  .modal-box{
+    margin: 130px auto auto;
+  }
+
+  .bitcoin-modal{
+    margin: 100px auto auto;
+  }
+
+  .coin-modal{
+    margin: 50px auto auto;
+  }
+  
+}
+
+@media(max-width: 420px){
+  .modal-container{
+    margin-top: 310px;
+  }
+
+  .modal-box{
+    margin-top: 70px;
+  }
+
+  .amazon{
+    margin-top: -110px !important;
+    text-align: center;
+  }
+}
+
+.amazon-radial{
+ margin: auto;
+}
+
+.amazon{
+  margin-top: -150px;
+  text-align: center;
+}
+
+.img-amazon{
+  width: 60%;
+  height: 60%;
+}
+
+.conversion-text{
+  text-align: center;
+  width: 60vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.hr-line{
+  width: auto;
+  margin-left: 140px;
+  margin-right: 110px;
+}
+
+.giftcard-content{
+  width: 21vw;
+  text-align: center;
+  margin: auto;
+}
+
+.giftcard-content p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #626262;
+  margin-bottom: 40px;
+}
+
+select{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dash-border{
+  border:1.5px dashed rgb(218, 119, 188);
+  box-shadow: none;
+  border-image-slice: 1;
+  height: 55px;
+  width: 10vw;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.amount{
+  margin-bottom: 20px;
+}
+
+.proceed-btn{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+color: #ffffff;
+width: 157px;
+height: 54px;
+background: linear-gradient(179.37deg, #FD749B -13.56%, #281AC8 158.3%);
+border-radius: 100px;
+text-transform: uppercase;
+border: none;
+}
+
+.proceed-btn:hover{
+outline:none;
+box-shadow: -1px -1px 20px -3px #ec1f46;color:#0a223d;
+font-weight: 400;
+transition:all ease .3s;
+}
+
+.modal-btn{
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.option{
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+color: #2F2F2F;
+}
+
+.form-control{
+height: 55px;
+}
