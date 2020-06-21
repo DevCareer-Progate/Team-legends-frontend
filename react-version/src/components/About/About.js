@@ -5,6 +5,16 @@ import Footer from "../Footer/Footer";
 
 //import css files
 import "./About.css";
+//import images
+import img1 from "./images/img1.svg";
+import img2 from "./images/img2.svg";
+import Quote from "./images/Quote.svg";
+import Line from "./images/Line.svg";
+import group2 from "./images/Group2.svg";
+import group3 from "./images/Group3.svg";
+import medal from "./images/medal.svg";
+import customerReview from "./images/customer-review.svg";
+import Tree from "./images/Tree.svg";
 
 const About = () => {
   return (
@@ -12,10 +22,7 @@ const About = () => {
       <NavBar />
       <main>
         <div class="container-fluid">
-          <section
-            class="sec-one container py-5"
-            style={{ "background-image": "url('images/BG.svg')" }}
-          >
+          <section class="sec-one container-fluid py-5">
             <div class="sec-one-div row text-white">
               <div class="col-sm-6 pt-5">
                 <a class="mb-4 text-white text-decoration-none" href="#home">
@@ -32,21 +39,18 @@ const About = () => {
                 </p>
               </div>
               <div class="col-sm-6">
-                <img
-                  class="img-responsive"
-                  src="images/img1.svg"
-                  alt="service-img"
-                />
+                <img class="img-responsive" src={img1} alt="service-img" />
               </div>
             </div>
           </section>
 
           <section class="container sec-two">
             <div>
-              <img class="img-responsive pb-4 quote" src="images/Quote.svg" />
+              <img class="img-responsive pb-4 quote" src={Quote} />
               <img
-                class="img-responsive d-block pb-3 line"
-                src="images/Line.svg"
+                class="img-responsive d-block pb-3"
+                src={Line}
+                style={{ margin: "0 auto" }}
               />
               <p class="small text-center">Ramon Ridwan • CEO CoinBase</p>
             </div>
@@ -57,13 +61,19 @@ const About = () => {
               <div class="inner-div">
                 <img
                   class="img-responsive text-center pb-5"
-                  src="images/img2.svg"
+                  src={img2}
                   alt=""
                 />
-                <h2 class="font-weight-bolder pb-1">About CoinBase</h2>
+                <h2
+                  class="font-weight-bolder pb-1"
+                  style={{ fontWeight: "bolder" }}
+                >
+                  About CoinBase
+                </h2>
                 <img
-                  class="img-responsive d-block pb-5 line"
-                  src="images/Line.svg"
+                  class="img-responsive d-block pb-5"
+                  src={Line}
+                  style={{ margin: "0 auto" }}
                 />
                 <p class="w-75 center pb-5">
                   CoinBase is an online site and a p2admin platform that allows
@@ -74,20 +84,16 @@ const About = () => {
               </div>
               <div class="row icon">
                 <div class="col-3">
-                  <img class="img-responsive" src="images/Group2.svg" alt="" />
+                  <img class="img-responsive" src={group2} alt="" />
                 </div>
                 <div class="col-3">
-                  <img class="img-responsive" src="images/medal.svg" alt="" />
+                  <img class="img-responsive" src={medal} alt="" />
                 </div>
                 <div class="col-3">
-                  <img
-                    class="img-responsive"
-                    src="images/customer-review.svg"
-                    alt=""
-                  />
+                  <img class="img-responsive" src={customerReview} alt="" />
                 </div>
                 <div class="col-3">
-                  <img class="img-responsive" src="images/Group3.svg" alt="" />
+                  <img class="img-responsive" src={group3} alt="" />
                 </div>
               </div>
             </div>
@@ -96,8 +102,9 @@ const About = () => {
           <section class="container sec_four my-5">
             <h2 class="text-center font-weight-bolder pt-5">Our history</h2>
             <img
-              class="img-responsive d-block pb-5 line"
-              src="images/Line.svg"
+              class="img-responsive d-block pb-5 "
+              style={{ margin: "0 auto" }}
+              src={Line}
             />
             <div class="sec-four-date">
               <div class="row center mb-5 date">
@@ -122,7 +129,7 @@ const About = () => {
                   </div>
                 </div>
                 <div class="col-6 d-flex right-col">
-                  <img src="images/Tree.svg" alt="" />
+                  <img src={Tree} alt="" />
                   <div class="right-date">
                     <h3>May, 2017</h3>
                     <p class="mt-4">
@@ -142,7 +149,8 @@ const About = () => {
             <h2 class="font-weight-bolder">Meet the team</h2>
             <img
               class="img-responsive d-block lines pb-5"
-              src="images/Line.svg"
+              src={Line}
+              style={{ margin: "0 auto" }}
             />
             <p class="my-0">
               Meet the team that makes the process of this system fast and
@@ -195,15 +203,16 @@ const About = () => {
           <section class="container text-center my-5 sec_five">
             <h2 class="font-weight-bolder">Subscribe our newsletter</h2>
             <img
-              class="img-responsive d-block line pb-5"
-              src="images/Line.svg"
+              class="img-responsive d-block pb-5"
+              style={{ margin: "0 auto" }}
+              src={Line}
             />
             <p>Subscribe to our newsletter for daily/weekly</p>
             <p>update of our products and services.</p>
             <form class="my-4" action="submit">
               <div class="form-group w-100">
                 <input class="py-3" type="text" placeholder="EMAIL" />
-                <a class="btn py-3 px-3" href="#">
+                <a class="btn px-3" href="#">
                   DISCOVER
                 </a>
               </div>
@@ -211,7 +220,6 @@ const About = () => {
           </section>
         </div>
       </main>
-
       <Footer />
     </div>
   );

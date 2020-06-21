@@ -47,6 +47,20 @@ input[type="text"] {
   outline: none;
   margin: 30px auto 20px auto;
 }
+
+.signin-btn {
+  background: linear-gradient(179.37deg, #fd749b -13.56%, #281ac8 158.3%);
+  border: 0px;
+  border-radius: 100px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  margin: 30px auto 20px 8.9rem;
+}
+.signin-btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
 .already-a-member,
 .dont-have-acct {
   margin: 5px auto 30px auto;
