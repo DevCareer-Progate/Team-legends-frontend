@@ -8,7 +8,7 @@ body {
 .sec-one {
   max-width: 100%;
   background-size: cover;
-  background-image: url("./images//BG.svg");
+  background-image: url("./images/BG.svg");
 }
 .sec-one a {
   display: inline-block;

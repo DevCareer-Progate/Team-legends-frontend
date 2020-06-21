@@ -181,12 +181,12 @@ const Blog1 = () => {
               </div>
 
               <div className="row col-sm-12 iTunes">
-                <div className="iTunes-sell ">
+                <div className="iTunes-sell col-sm-6">
                   <h5>
                     How to sell your iTunes <br /> giftcard with us
                   </h5>
                 </div>
-                <div className="Exchange">
+                <div className="Exchange col-sm-4 offset-sm-2">
                   <h5>
                     Exchange 5 products and get <br /> one free product
                   </h5>
@@ -194,7 +194,7 @@ const Blog1 = () => {
               </div>
 
               <div className="row col-sm-12 iTunes">
-                <div className="iTunes-sell ">
+                <div className="iTunes-sell col-sm-6">
                   <h5>The rise of the crypto Startups</h5>
                   <input
                     type="submit"
@@ -203,7 +203,7 @@ const Blog1 = () => {
                     value="Prev Post"
                   />
                 </div>
-                <div className="Exchange">
+                <div className="Exchange col-sm-4 offset-sm-2">
                   <h5>
                     Bootstrapping the Coinbase <br /> Monorepo in 2020
                   </h5>
@@ -259,7 +259,7 @@ const Blog1 = () => {
                     className="btn-contact"
                     name=""
                     value="PUBLISH"
-                    id=""
+                    id="btn-contact"
                   />
                 </div>
               </form>

@@ -117,13 +117,18 @@ const Blog = () => {
 
           /* onclick="window.location.href = './blog.html'" */
         >
-          <Link to="/blog1">01</Link>
+          <Link to="/blog1" style={{ color: "#fff" }}>
+            01
+          </Link>
         </button>
         <button
           className="blog-page"
           disabled
           /*  onclick="window.location.href = './blog.html'" */
         >
+          {/* <Link to="/blog1" style={{ color: "#fff" }}>
+            02
+          </Link> */}
           02
         </button>
         <button
@@ -131,10 +136,14 @@ const Blog = () => {
           disabled
           /* onclick="window.location.href = './blog.html'" */
         >
+          {/* <Link to="/blog1" style={{ color: "#fff" }}>
+            03
+          </Link> */}
           03
         </button>
         <button
           className="blog-page blog-dot"
+          disabled
           /*  onclick="window.location.href = './blog.html'" */
         >
           {" "}
@@ -142,6 +151,7 @@ const Blog = () => {
         </button>
         <button
           className="blog-next"
+          disabled
           /* onclick="window.location.href = './blog.html'" */
         >
           NEXT

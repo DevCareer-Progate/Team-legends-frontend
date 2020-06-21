@@ -53,7 +53,7 @@
 
 /* TOP SECTION ENDS*/
 
-/* BLOG SECTION */
+/* BLOG SECTION *.form/
 
 .blog-content .col-lg-12 {
   max-width: 1200px;
@@ -92,7 +92,7 @@
 
 .blog-one .second-blog .blog-img img {
   margin-top: 1.4rem;
-  height: auto;
+  height: 140vh;
   max-width: 100%;
   animation: zoomimg 2s infinite;
 }
@@ -246,8 +246,8 @@
   margin-top: 2rem;
 }
 
-.form .form-button .btn-contact {
-  padding: 0.9rem 3.6rem;
+.form .form-button #btn-contact {
+  padding: 0.9rem 2.6rem 0.9rem 2.1rem;
   background: linear-gradient(179.37deg, #fd749b -13.56%, #281ac8 158.3%);
   border-radius: 100px;
   border: none;

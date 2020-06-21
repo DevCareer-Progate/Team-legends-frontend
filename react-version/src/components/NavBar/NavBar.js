@@ -3,6 +3,7 @@ import "../Home/Home.css";
 import "../SignIn/SignIn.css";
 import { NavLink, Link } from "react-router-dom";
 import SignIn from "../SignIn/SignIn";
+import SignUp from "../SignUp/SignUp";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
@@ -30,6 +31,14 @@ const NavBar = () => {
   const closeLoginModal = () => {
     setLoginModal(false);
   };
+  //sign up modal
+  const openSignUpModal = () => {
+    setSignupModal(true);
+  };
+  const closeSignUpModal = () => {
+    setSignupModal(false);
+  };
+  //signup modal ends
   return (
     <header>
       <nav className="navbar m-0 p-0">
@@ -151,9 +160,12 @@ const NavBar = () => {
 
                       {/* <!-- Modal --> */}
                       <div className="modal fade" id="" role="dialog"></div>
-                      <Link className="dropdown-item">Sign UP</Link>
+                      <Link className="dropdown-item" onClick={openSignUpModal}>
+                        Sign UP
+                      </Link>
                     </div>
                     <SignIn show={logModal} click={closeLoginModal} />
+                    <SignUp show={signUpModal} click={closeSignUpModal} />
                   </div>
                 </li>
               </ul>
