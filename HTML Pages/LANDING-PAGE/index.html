@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coinbase</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+
+    <meta name="author" content="Team Legends" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+
+    <link rel="icon" href="img/favicon.png" sizes="32x32" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+
+    <!--CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar m-0 p-0">
+        <div class="primary-header w-100">
+          <div class="container">
+            <div
+              class="w-100 row m-0 p-0 justify-content-between align-items-center"
+            >
+              <a class="navbar-brand" href="#">
+                <img class="inlineLogo" src="img/Logo.svg" alt="" />
+              </a>
+              <div class="toggle-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+              <ul
+                class="primary-menu row justify-content-between align-items-center h-100 p-0 m-0"
+              >
+                <li class="menu-item active">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../ABOUT-US/about.html">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../BLOG-PAGE/blog.html">Blog</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../CONTACT-US/contact.html">Contact Us</a>
+                </li>
+                <li class="menu-item offset-md-0">
+                  <div class="dropdown">
+                    <a
+                      class="dropdown-toggle whitetxt"
+                      href="#"
+                      role="button"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Sell Bitcoin/ Giftcard
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <a
+                        class="dropdown-item"
+                        href="#sellBitcoin"
+                        data-toggle="modal"
+                        >Sell Bitcoin</a
+                      >
+                      <!-- Modal -->
+                      <div class="modal fade" id="sellBitcoin" role="dialog">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                              >
+                                &times;
+                              </button>
+                              <h4 style="color: red;">
+                                <span class="glyphicon glyphicon-lock"></span>
+                                Login
+                              </h4>
+                            </div>
+                            <div class="modal-body">
+                              <form role="form">
+                                <div class="form-group">
+                                  <label for="usrname"
+                                    ><span
+                                      class="glyphicon glyphicon-user"
+                                    ></span>
+                                    Username</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="usrname"
+                                    placeholder="Enter email"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="psw"
+                                    ><span
+                                      class="glyphicon glyphicon-eye-open"
+                                    ></span>
+                                    Password</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="psw"
+                                    placeholder="Enter password"
+                                  />
+                                </div>
+                                <div class="checkbox">
+                                  <label
+                                    ><input
+                                      type="checkbox"
+                                      value=""
+                                      checked
+                                    />Remember me</label
+                                  >
+                                </div>
+                                <button
+                                  type="submit"
+                                  class="btn btn-default btn-success btn-block"
+                                >
+                                  <span class="glyphicon glyphicon-off"></span>
+                                  Login
+                                </button>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="submit"
+                                class="btn btn-default btn-default pull-left"
+                                data-dismiss="modal"
+                              >
+                                <span class="glyphicon glyphicon-remove"></span>
+                                Cancel
+                              </button>
+                              <p>Not a member? <a href="#">Sign Up</a></p>
+                              <p>Forgot <a href="#">Password?</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--modal ends-->
+                      <a class="dropdown-item" href="#">Sell Giftcard</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="button btn">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--End of Header-->
+    <main>
+      <section class="page-banner gradient-back curve-bottom w-100">
+        <div class="container">
+          <div class="row m-0 p-0">
+            <div class="col-12 col-md-6">
+              <div class="inner-container">
+                <h1 class="whitetxt mb-4">
+                  We provide easy solution to exchange your
+                  <strong>Bitcoin/Giftcard for money</strong>
+                </h1>
+                <p class="big whitetxt mb-5">
+                  CoinBase is a platform for trading your bitcoin and giftcard
+                  at the best rate, why not give us a trial.
+                </p>
+                <a href="#" class="btn btn-white">
+                  <span>GET STARTED</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                src="img/IMG-illustrastion.svg"
+                class="img-fluid img-zoom mb-5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--end of section-->>
+      <section class="whiteback">
+        <div class="container">
+          <div class="row m-0 p-0">
+            <div class="col-12 col-md-6">
+              <img src="img/welcome.svg" class="img-fluid img-zoom mb-5" />
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="sect-head">
+                <h3 class="gradient-txt">Welcome to CoinBase</h3>
+                <div class="divider"></div>
+              </div>
+              <p class="mb-5">
+                We have the best rates . Simply start your exchange right now.
+                Sign up for our Affiliate program and earn commission from each
+                exchange. The earnings are credited in your account instantly
+                and can be withdrawn right away. Also note some exchange
+                directions are hidden for unregistered user. To ensure to have
+                access to all our exchange directions and benefits kindly sign
+                up and verify your identity.
+              </p>
+              <a href="#" class="btn button">DISCOVER</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of section-->
+      <section class="both-curve gradient-back">
+        <div class="container">
+          <div class="inner-container">
+            <div class="w-100 mx-0 p-0 latest-box">
+              <div class="col-12 table-responsive-xl px-0">
+                <table class="table table-borderless table-hover">
+                  <thead class="text-center">
+                    <tr>
+                      <th scope="col" colspan="2">
+                        <h5 class="big gradient-txt text-left pl-5">
+                          OUR RATES
+                        </h5>
+                      </th>
+                      <th scope="col" colspan="2">
+                        <h5 class="big gradient-txt">OUR RESERVES</h5>
+                      </th>
+                      <th scope="col" colspan="2">
+                        <h5 class="big gradient-txt">LATEST EXCHANGES</h5>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"></th>
+                      <td></td>
+                      <td colspan="2"></td>
+                      <td colspan="2">
+                        <div class="w-75 mr-0 ml-auto latest-exchange">
+                          <button>8 hours ago</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <img
+                          src="img/bitcoin.svg"
+                          class="img-fluid d-inline mr-3"
+                        />
+                        <p class="small d-inline">BTC</p>
+                      </th>
+                      <td>
+                        <p>We Buy @ <span class="strong">₦350/$</span></p>
+                        <p>We Buy @ <span class="strong">₦370/$</span></p>
+                      </td>
+                      <td colspan="2">
+                        <div class="rate">
+                          <div>
+                            <img
+                              src="img/bank-transfer.svg"
+                              class="img-fluid d-inline mr-3"
+                            />
+                            <p class="small d-inline">Bank Transfer</p>
+                            <p class="small float-right">NGN</p>
+                          </div>
+                          <p class="strong text-right">#3452030300303.24/$</p>
+                        </div>
+                      </td>
+                      <td colspan="2">
+                        <div class="w-75 mr-0 ml-auto latest-exchange">
+                          <div class="text-right">
+                            <p class="small">
+                              Bitcoin BTC
+                              <span><img src="img/transfer.svg" /></span> Bank
+                              Transfer NGN
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <img
+                          src="img/Etherum.svg"
+                          class="img-fluid d-inline mr-3"
+                        />
+                        <p class="small d-inline">ETH</p>
+                      </th>
+                      <td>
+                        <p>We Buy @ <span class="strong">₦345/$</span></p>
+                        <p>We Buy @ <span class="strong">₦370/$</span></p>
+                      </td>
+                      <td colspan="2">
+                        <div class="rate">
+                          <div class="">
+                            <img
+                              src="img/bitcoin.svg"
+                              class="img-fluid d-inline mr-3"
+                            />
+                            <p class="small d-inline">BTC</p>
+                            <p class="small float-right">399.98 BTC</p>
+                          </div>
+                          <div class="">
+                            <img
+                              src="img/Etherum.svg"
+                              class="img-fluid d-inline mr-3"
+                            />
+                            <p class="small d-inline">Ethereum</p>
+                            <p class="small float-right">1000.00 ETH</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td colspan="2">
+                        <div class="w-75 mr-0 ml-auto latest-exchange">
+                          <div class="text-right">
+                            <p class="small">
+                              1.16 BTC
+                              <span><img src="img/transfer.svg" /></span>
+                              696152299929.23 NGN
+                            </p>
+                          </div>
+                          <div class="text-right">
+                            <p class="small">
+                              Amazon Card
+                              <span><img src="img/transfer.svg" /></span> Bank
+                              Transfer
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="whiteback">
+        <div class="container">
+          <div class="row m-0 p-0 pb-5">
+            <div class="col-12 col-md-6">
+              <div class="sect-head">
+                <h3 class="gradient-txt">
+                  Great experience <br />with CoinBase
+                </h3>
+                <div class="divider"></div>
+              </div>
+              <p class="mb-5">
+                CoinBase is an online site and a p2admin platform that allows
+                users to buy, sell and/ or exchange digital and fiat assets
+                safely. Owned and managed by CoinBase Business Services
+                established and Incoperated in Nigeria.
+              </p>
+              <a href="#" class="btn button">DISCOVER</a>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                src="img/great-experience.svg"
+                class="img-fluid img-zoom mb-5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="curve-middle">
+        <div class="container">
+          <div class="inner-container">
+            <div class="w-100 row m-0 mx-4 trade-box justify-content-center">
+              <div class="col-12 sect-head text-center">
+                <h3 class="gradient-txt">Trade from anywhere</h3>
+                <div class="divider center"></div>
+              </div>
+              <div
+                class="trade-item col-12 col-md-6 mt-5 mb-3 mr-md-3 md-text-center"
+              >
+                <a
+                  href="#"
+                  class="row m-0 w-100 h-100 justify-content-center align-content-center text-center"
+                >
+                  <img src="img/bitcoin.svg" class="img-fluid" />
+                  <h6 class="col-12 mt-3 graytxt">Bitcoin</h6>
+                </a>
+              </div>
+              <div
+                class="trade-item col-12 col-md-6 mt-5 mb-3 ml-md-3 md-text-center"
+              >
+                <a
+                  href="#"
+                  class="row m-0 w-100 h-100 justify-content-center align-content-center text-center"
+                >
+                  <img src="img/gift-cards.svg" class="img-fluid" />
+                  <h6 class="col-12 mt-3 graytxt">Gift Cards</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="whiteback">
+        <div class="container">
+          <div class="w-100 row m-0 p-0 px-4">
+            <div class="col-12 sect-head text-center">
+              <h3 class="gradient-txt">Our blog</h3>
+              <div class="divider center"></div>
+              <p class="">Get to know the latest stuff via our blog post.</p>
+            </div>
+            <div class="col-12">
+              <div class="page-post-center slider">
+                <div class="post-item">
+                  <div class="h-100 w-100 post-item-wrap">
+                    <p class="smaller mb-3">01 FEB, 2019 | TECHNOLOGY</p>
+                    <h4 class="gradient-txt mb-3">
+                      HOW TO SELL YOUR ITUNES GIFTCARD WITH US .
+                    </h4>
+                    <p class="excerpt mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui
+                      minimum voluptaria in. Ad mei modus quodsi complectitur,
+                      postea...
+                    </p>
+                    <a href="#" class="button btn">READ MORE</a>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="h-100 w-100 post-item-wrap">
+                    <p class="smaller mb-3">19 JUNE, 2019 | BUSINESS</p>
+                    <h4 class="gradient-txt mb-3">
+                      ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER...
+                    </h4>
+                    <p class="excerpt mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui
+                      minimum voluptaria in. Ad mei modus quodsi complectitur,
+                      postea...
+                    </p>
+                    <a href="#" class="button btn">READ MORE</a>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="h-100 w-100 post-item-wrap">
+                    <p class="smaller mb-3">01 DEC, 2019 | LIFESTYLE</p>
+                    <h4 class="gradient-txt mb-3">
+                      EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT.
+                    </h4>
+                    <p class="excerpt mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui
+                      minimum voluptaria in. Ad mei modus quodsi complectitur,
+                      postea...
+                    </p>
+                    <a href="#" class="button btn">READ MORE</a>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="h-100 w-100 post-item-wrap">
+                    <p class="smaller mb-3">19 JUNE, 2019 | BUSINESS</p>
+                    <h4 class="gradient-txt mb-3">
+                      ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER...
+                    </h4>
+                    <p class="excerpt mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui
+                      minimum voluptaria in. Ad mei modus quodsi complectitur,
+                      postea...
+                    </p>
+                    <a href="#" class="button btn">READ MORE</a>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="h-100 w-100 post-item-wrap">
+                    <p class="smaller mb-3">01 FEB, 2019 | TECHNOLOGY</p>
+                    <h4 class="gradient-txt mb-3">
+                      HOW TO SELL YOUR ITUNES GIFTCARD WITH US .
+                    </h4>
+                    <p class="excerpt mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui
+                      minimum voluptaria in. Ad mei modus quodsi complectitur,
+                      postea...
+                    </p>
+                    <a href="#" class="button btn">READ MORE</a>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="h-100 w-100 post-item-wrap">
+                    <p class="smaller mb-3">01 DEC, 2019 | LIFESTYLE</p>
+                    <h4 class="gradient-txt mb-3">
+                      EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT.
+                    </h4>
+                    <p class="excerpt mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui
+                      minimum voluptaria in. Ad mei modus quodsi complectitur,
+                      postea...
+                    </p>
+                    <a href="#" class="button btn">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="bubble-back gradient-back both-curve">
+        <div class="container">
+          <div class="w-100 row m-0 p-0 px-4">
+            <div class="col-12 sect-head text-center">
+              <h3 class="whitetxt">
+                10,000 Satisfied clients <br />around the world
+              </h3>
+              <div class="divider center"></div>
+              <p class="center-small whitetxt">
+                Yeah! we’re proud with numbers. We’ve helped thousands of
+                clients all around the world with our bespoke service. Hover
+                ontop of them pic to view their testimonials.
+              </p>
+            </div>
+            <div class="col-12">
+              <div class="page-bubble-center">
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bubble-item">
+                  <div
+                    class="client-img"
+                    style="background-image: url();"
+                  ></div>
+                  <div class="speech-bubble">
+                    <p class="smaller mb-2">Femi from Nigeria</p>
+                    <div class="reviews">
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                      <img src="img/star.svg" class="img-fluid" />
+                    </div>
+                    <div class="reviewtxt">
+                      <p class="testimon graytxt mb-1">Wonderful service</p>
+                      <p class="">
+                        Good deal and very wonderful service thank you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="whiteback">
+        <div class="container">
+          <div class="w-100 row m-0 p-0">
+            <div class="col-12 sect-head text-center">
+              <h3 class="gradient-txt">Download our app</h3>
+              <div class="divider center"></div>
+              <p class="graytxt">
+                Discover exclusive deals and discounts with our mobile
+                experience.
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <a href="#" class="d-inline-block stores">
+                <img src="img/badge-apple-store.svg" class="img-fluid" />
+              </a>
+              <a href="#" class="d-inline-block stores">
+                <img src="img/badge-google-play.svg" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="mock-up curve-bottom">
+        <div class="container">
+          <div class="row m-0 p-0 w-100">
+            <div
+              class="col-12 col-md-6 mt-md-5 pt-md-3 text-center text-md-right"
+            >
+              <img src="img/X-1.svg" class="img-fluid mt-md-5" />
+            </div>
+            <div
+              class="col-12 col-md-6 mt-4 mt-md-5 pt-md-3 text-center text-md-left"
+            >
+              <img src="img/X-2.svg" class="img-fluid mt-md-5" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of section-->
+      <section class="whiteback plustop">
+        <div class="container">
+          <div class="w-100 row m-0 p-0">
+            <div class="col-12 sect-head text-center">
+              <h3 class="gradient-txt">Subscribe our newsletter</h3>
+              <div class="divider center"></div>
+              <p class="graytxt">
+                Subscribe to our newsletter for daily/weekly update of our
+                products and services.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 mx-auto my-4">
+              <form>
+                <div class="form-row align-items-center justify-content-center">
+                  <div class="col-12 col-md-7 mr-md-4 input-gradient-border">
+                    <input
+                      type="text"
+                      class="form-control border-0"
+                      id="inlineFormInput"
+                      placeholder="Email "
+                    />
+                  </div>
+                  <div
+                    class="col-6 col-md-4 mt-3 mt-md-0 ml-3 m-md-0 p-0 text-right"
+                  >
+                    <button type="submit" class="btn w-100 whitetxt">
+                      DISCOVER
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row m-0 p-0 w-100">
+          <div class="col-12 col-md-6 col-xl-4 text-center text-md-left">
+            <a href="#" class="d-inline-block mb-4">
+              <img src="img/logofooter.svg" class="img-fluid" />
+            </a>
+            <p class="small gray2 my-3">
+              Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
+              rhoncus augue. Fusce vel metus pharetra, fermentum
+            </p>
+            <div
+              class="row m-0 p-0 social-link mb-5 text-center text-md-left justify-content-left"
+            >
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-facebook-square"></i>
+              </a>
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-twitter"></i
+              ></a>
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-2 text-center text-md-left">
+            <h5 class="whitetxt mb-4">CoinBase Links</h5>
+            <ul class="secondary-menu">
+              <li><a href="#" class="gray2">Home</a></li>
+              <li><a href="#" class="gray2">About Us</a></li>
+              <li><a href="#" class="gray2">Blog</a></li>
+              <li><a href="#" class="gray2">Sell</a></li>
+              <li><a href="#" class="gray2">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 text-center text-md-left">
+            <h5 class="whitetxt mb-4">Contact Us</h5>
+            <ul class="secondary-menu">
+              <li><a href="#" class="gray2">(+123) 456789078</a></li>
+              <li><a href="#" class="gray2">Coinbase@yahoo.com</a></li>
+              <li><a href="#" class="gray2">Address goes here</a></li>
+              <li class="mt-5">
+                <a href="#" class="gray2">Download Our App</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 text-center text-md-left">
+            <h5 class="whitetxt mb-4">CoinBase Instagram</h5>
+            <ul class="instagram-feed row p-0 m-0 w-100">
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 my-4 my-xl-0 text-center text-md-left">
+            <p class="gray3">
+              © 2019 Designed by Cr8tiv_yemmy | 2020 Developed by Team_Legends
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <!-- <script src="js/slick.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript">
+      $(document).on("ready", function () {
+        $(".page-post-center").slick({
+          centerMode: true,
+          autoplay: true,
+          infinite: true,
+          centerPadding: "0px",
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1199,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      const toggleButton = document.querySelector(".toggle-menu");
+      const navMenu = document.querySelector(".primary-header");
+      const navBar = document.querySelector(".primary-menu");
+      toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("toggled");
+      });
+      toggleButton.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
