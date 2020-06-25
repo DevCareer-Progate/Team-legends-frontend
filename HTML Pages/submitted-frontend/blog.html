@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Coinbase | Blog</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Coinbase Redesigned Blog" />
+
+    <meta name="keywords" content="" />
+
+    <meta name="author" content="Team Legends" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+
+    <link rel="icon" href="img/favicon.png" sizes="32x32" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+
+    <!--CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/loaders.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+    <script type="text/javascript">
+      window.addEventListener("load", function(){
+        var load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen)
+      })
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar m-0 p-0">
+        <div class="primary-header w-100">
+          <div class="container">
+            <div
+              class="w-100 row m-0 p-0 justify-content-between align-items-center"
+            >
+              <a class="navbar-brand" href="#">
+                <img class="inlineLogo" src="img/Logo.svg" alt="" />
+              </a>
+              <div class="toggle-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+              <ul
+                class="primary-menu row justify-content-between align-items-center h-100 p-0 m-0"
+              >
+                <li class="menu-item">
+                  <a href="./index.html" class="menu-link">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="about.html" class="menu-link">About Us</a>
+                </li>
+                <li class="menu-item active">
+                  <a href="blog.html" class="menu-link">Blog</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html" class="menu-link">Contact Us</a>
+                </li>
+                <li class="menu-item offset-md-0">
+                  
+                  <div class="dropdown">
+                      <a class="dropdown-toggle whitetxt menu-link" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sell Bitcoin/ Giftcard
+                        </a>
+
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                          <a class="dropdown-item" href="#bitcoinModal" data-toggle="modal" >Sell Bitcoin</a>    
+                          <a class="dropdown-item" href="#giftcardsModal" data-toggle="modal">Sell Giftcard</a>
+                      </div>
+                  </div>
+
+                  <!-- Giftcards Modal -->
+                  <div class="modal" id="giftcardsModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-container" >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="h4 gradient-txt text-center my-3">GOT GIFTCARDS FOR SELL?</div>
+                                <p class="text-center graytxt">choose your prefered product to continue</p>
+                                <div class="mod-content">
+                                  <a href="#amazon"data-toggle="modal" ><img  class="img-responsive"  src="img\Amazon.svg" alt=""></a>
+                                  <a href="#itunes"data-toggle="modal"><img  class="img-responsive" src="img\iTunes.svg" alt=""></a>
+                                  <a href="#googlePlay"data-toggle="modal"><img  class="img-responsive" src="img\Google Play.svg" alt=""></a>
+                                  <a href="#steam" data-toggle="modal"><img  class="img-responsive" src="img\Steam.svg" alt=""></a>
+                                  <a href="#others"data-toggle="modal"><img  class="img-responsive" src="img\Others.svg" alt=""></a>
+                                </div>
+                            </div>                   
+                          </div>
+                      </div>
+
+                      <!-- Amazon card Modal -->
+                      <div class="modal" id="amazon" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Amazon.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Amazon card on this platform</div>
+                                  <hr class="hr-line">          
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="naira">
+                                       <input class="dash-border" style="border: 1.5px dashed #FD749B !important; border-radius: 5px; border-style: none;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>          
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <!-- itunes card Modal-->
+                      <div class="modal" id="itunes" role="dialog" tabindex="-1" aria-labelledby="itunes Conversion rate" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5itunes.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\iTunes.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every App Store itunes card on this platform</div>
+                                  <hr class="hr-line">            
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                      <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>            
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <!--Google Play Modal -->
+                      <div class="modal" id="googlePlay"  role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5play.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Google Play.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Google Play card on this platform</div>
+                                  <hr class="hr-line">
+                                  <div class="giftcard-content">
+                                    <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>        
+                                  </div>
+                              </div>          
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Steam card Modal -->
+                      <div class="modal" id="steam" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5steam.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Steam.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Steam card on this platform</div>
+                                  <hr class="hr-line">
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <!-- Other Cards Modal -->
+                      <div class="modal" id="others" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5others.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Others.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Voucher on this platform</div>
+                                  <hr class="hr-line">
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>                
+                  </div>  
+                  <!-- giftcards Modal ends here-->           
+                  
+                  <!-- Bitcoin Modals -->
+                  <div class="modal" id="bitcoinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered bitcoin-modal" >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="h4 gradient-txt text-center my-3">GOT GIFTCARDS FOR SELL?</div>
+                                <p class="text-center">choose your prefered product to continue</p>
+                                <div class="btc-Etc-modal">
+                                    <a href="#bitcoin"data-toggle="modal" ><img  class="img-responsive"  src="img\Card-1.svg" alt=""></a>
+                                    <a href="#ethereum"data-toggle="modal"><img  class="img-responsive" src="img\Card-2.svg" alt=""></a>
+                               </div>
+                            </div>     
+                          </div>
+                      </div>
+                      <div class="modal" id="bitcoin" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered coin-modal" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5bitcoin.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Card-1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text"><strong>N360.00</strong> is our conversion rate for 0.1 BTC on this platform</div>
+                                  <hr class="hr-line">           
+                                  <div class="giftcard-content">
+                                    <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Bitcoin Value">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px; border-style: none;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- Ethereum Modal-->
+                      <div class="modal" id="ethereum" role="dialog" tabindex="-1" aria-labelledby="itunes Conversion rate" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered coin-modal" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5ETH.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Card-2.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every 0.1 ETH on this platform</div>
+                                  <hr class="hr-line">                                         
+                                  <div class="giftcard-content">
+                                    <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Ethereum Value">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                    
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                </li>
+                <li class="menu-item">
+                  <a href="#loginModal" class="button btn" data-toggle="modal" >Login</a>
+
+                  <!-- Login Modal -->
+                  <div class="modal" id="loginModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-container" >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="h4 gradient-txt text-center my-3">Welcome back!</div>
+                                <p class="text-center graytxt">Kindly fill in your login details to proceed</p>
+                                <div class="mod-content">
+                                    <div class="modal-form">
+                                      <div class="">
+                                        <input class="form-control form-control-lg amount" type="email" placeholder="Email">
+                                      </div>
+                                      <div class="">
+                                        <input class="form-control form-control-lg amount" type="email" placeholder="Password">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn" type="submit">LOGIN</button>
+                                      </div>
+                                       <p class="text-center mt-3 graytxt">Don’t have an account yet?  <a href="#signup" class="strong blacktxt" data-toggle="modal">Sign Up</a></p>
+                                    </div> 
+                                </div>
+                            </div>                   
+                          </div>
+                      </div>
+
+                      <!-- Signup card Modal -->
+                      <div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                  <div class="h4 gradient-txt text-center my-3">Sign Up</div>
+                                  <p class="text-center graytxt">There’s no charge upon registration</p>
+                                  <div class="mod-content">
+                                      <div class="modal-form">
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="text" placeholder="Full Name">
+                                        </div>
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="email" placeholder="Email">
+                                        </div>
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="password" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="password" placeholder="Password">
+                                        </div>
+                                        <div class="modal-btn">
+                                          <button class="proceed-btn" type="submit">SIGNUP</button>
+                                        </div>
+                                         <p class="text-center mt-3 graytxt">Already a member?  <a href="#" class="strong blacktxt" data-toggle="modal">Login</a></p>
+                                      </div> 
+                                  </div>
+                              </div>                   
+                            </div>
+                          </div>
+                      </div>  
+                  </div> 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--End of Header-->
+    <main>
+      <section class="page-banner gradient-back curve-bottom w-100">
+        <div class="container">
+          <div class="row m-0 p-0">
+            <div class="col-12 col-md-6">
+              <div class="inner-container">                            
+                <p class="whitetxt"><a href="index.html" class="whitetxt text-decoration-none">HOME/</a> BLOG</p>
+                <h1 class="whitetxt mb-4 font-weight-bolder">Stay updated, Never miss a post</h1>
+                <p class="big whitetxt mb-5">
+                  Get to know the latest stuff about our services via our blog
+                  post.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="img/blog-home-banner.png" class="img-fluid img-zoom mb-5" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="whiteback py-5">
+        <div class="container">
+          <ul class="row m-0 p-0">
+            <li class="col-12 my-3 blog-info">
+              <img
+                src="./img/post1.png"
+                class="blog-info-img"
+                alt="post image"
+              />
+              <div class="gradient-back post-wrapper">
+                <div class=" blog-info-txt py-4 px-3 text-center">
+                  <h2 class="gradient-txt">HOW TO SELL YOUR ITUNES GIFTCARD WITH US</h2>
+                  <p class="graytxt smaller my-3">01 Feb 2019 | Technology</p>
+                  <div class="blog-infopost-excerpt mx-auto">
+                    <p class="graytxt mt-4 mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
+                      voluptaria in. Ad mei modus quodsi complectitur, postea verterem
+                      persecuti cu est, sea epicuri.
+                    </p>
+                    <a href="blog-page-content.html" class="button btn mx-auto">DISCOVER</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            <li class="col-12 my-3 blog-info">
+              <img
+                src="./img/post2.png"
+                class="blog-info-img"
+                alt="post image"
+              />
+              <div class="gradient-back post-wrapper">
+                <div class=" blog-info-txt py-4 px-3 text-center">
+                  <h2 class="gradient-txt">ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER ETH</h2>
+                  <p class="graytxt smaller my-3">15 june 2019 | Business</p>
+                  <div class="blog-infopost-excerpt mx-auto">
+                    <p class="graytxt mt-4 mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
+                      voluptaria in. Ad mei modus quodsi complectitur, postea verterem
+                      persecuti cu est, sea epicuri.
+                    </p>
+                    <a href="blog-page-content.html" class="button btn mx-auto">DISCOVER</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="col-12 my-3 blog-info">
+              <img
+                src="./img/post2.png"
+                class="blog-info-img"
+                alt="post image"
+              />
+              <div class="gradient-back post-wrapper">
+                <div class=" blog-info-txt py-4 px-3 text-center">
+                  <h2 class="gradient-txt">EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT</h2>
+                  <p class="graytxt smaller my-3">15 june 2019 | Business</p>
+                  <div class="blog-infopost-excerpt mx-auto">
+                    <p class="graytxt mt-4 mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
+                      voluptaria in. Ad mei modus quodsi complectitur, postea verterem
+                      persecuti cu est, sea epicuri.
+                    </p>
+                    <a href="blog-page-content.html" class="button btn mx-auto">DISCOVER</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="col-12 my-3 blog-info">
+              <img
+                src="./img/post3.png"
+                class="blog-info-img"
+                alt="post image"
+              />
+              <div class="gradient-back post-wrapper">
+                <div class=" blog-info-txt py-4 px-3 text-center">
+                  <h2 class="gradient-txt">ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER ETH</h2>
+                  <p class="graytxt smaller my-3">01 Dec 2019 | Lifestyle</p>
+                  <div class="blog-infopost-excerpt mx-auto">
+                    <p class="graytxt mt-4 mb-3">
+                      Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
+                      voluptaria in. Ad mei modus quodsi complectitur, postea verterem
+                      persecuti cu est, sea epicuri.
+                    </p>
+                    <a href="blog-page-content.html" class="button btn mx-auto">DISCOVER</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>              
+          <div class="blog-pagenation">
+            <button
+              class="blog-page"
+              onclick="window.location.href = '../BLOG-PAGE-CONTENT-ONE/index.html'"
+            >
+              01
+            </button>
+            <button class="blog-page" onclick="window.location.href = './blog.html'">
+              02
+            </button>
+            <button class="blog-page" onclick="window.location.href = './blog.html'">
+              03
+            </button>
+            <button
+              class="blog-page blog-dot"
+              onclick="window.location.href = './blog.html'"
+            >
+              ...
+            </button>
+            <button class="blog-next" onclick="window.location.href = './blog.html'">
+              NEXT
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row m-0 p-0 w-100">
+          <div class="col-12 col-md-6 col-xl-4 text-center text-md-left">
+            <a href="#" class="d-inline-block mb-4">
+              <img src="img/logofooter.svg" class="img-fluid" />
+            </a>
+            <p class="small gray2 my-3">
+              Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
+              rhoncus augue. Fusce vel metus pharetra, fermentum
+            </p>
+            <div
+              class="row m-0 p-0 social-link mb-5 text-center text-md-left justify-content-left"
+            >
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-facebook-square"></i>
+              </a>
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-twitter"></i
+              ></a>
+              <a href="#" class="d-inline-block mr-3 whitetxt"
+                ><i class="link fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-2 text-center text-md-left">
+            <h5 class="whitetxt mb-4">CoinBase Links</h5>
+            <ul class="secondary-menu">
+              <li><a href="#" class="gray2">Home</a></li>
+              <li><a href="#" class="gray2">About Us</a></li>
+              <li><a href="#" class="gray2">Blog</a></li>
+              <li><a href="#" class="gray2">Sell</a></li>
+              <li><a href="#" class="gray2">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 text-center text-md-left">
+            <h5 class="whitetxt mb-4">Contact Us</h5>
+            <ul class="secondary-menu">
+              <li><a href="#" class="gray2">(+123) 456789078</a></li>
+              <li><a href="#" class="gray2">Coinbase@yahoo.com</a></li>
+              <li><a href="#" class="gray2">Address goes here</a></li>
+              <li class="mt-5">
+                <a href="#" class="gray2">Download Our App</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 text-center text-md-left">
+            <h5 class="whitetxt mb-4">CoinBase Instagram</h5>
+            <ul class="instagram-feed row p-0 m-0 w-100">
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+              <li class="col-6 col-sm-4 col-md-3">
+                <img src="img/ig-picture.png" class="img-fluid" />
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 my-4 my-xl-0 text-center text-md-left">
+            <p class="gray3">
+              © 2019 Designed by Cr8tiv_yemmy | 2020 Developed by Team_Legends
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      const toggleButton = document.querySelector(".toggle-menu");
+      const navMenu = document.querySelector(".primary-header");
+      const navBar = document.querySelector(".primary-menu");
+      toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("toggled");
+      });
+      toggleButton.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

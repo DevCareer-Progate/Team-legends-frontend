@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coinbase | About Us</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Coinbase Redesigned" />
+
+    <meta name="keywords" content="" />
+
+    <meta name="author" content="Team Legends" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+
+    <link rel="icon" href="img/favicon.png" sizes="32x32" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+
+    <!--CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/loaders.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+    <script type="text/javascript">
+      window.addEventListener("load", function(){
+        var load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen)
+      })
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar m-0 p-0">
+        <div class="primary-header w-100">
+          <div class="container">
+            <div
+              class="w-100 row m-0 p-0 justify-content-between align-items-center"
+            >
+              <a class="navbar-brand" href="#">
+                <img class="inlineLogo" src="img/Logo.svg" alt="" />
+              </a>
+              <div class="toggle-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+              <ul
+                class="primary-menu row justify-content-between align-items-center h-100 p-0 m-0"
+              >
+                <li class="menu-item">
+                  <a href="index.html" class="menu-link">Home</a>
+                </li>
+                <li class="menu-item active">
+                  <a href="about.html" class="menu-link">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="blog.html" class="menu-link">Blog</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html" class="menu-link">Contact Us</a>
+                </li>
+                <li class="menu-item offset-md-0">
+                  
+                  <div class="dropdown">
+                      <a class="dropdown-toggle whitetxt menu-link" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sell Bitcoin/ Giftcard
+                        </a>
+
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                          <a class="dropdown-item" href="#bitcoinModal" data-toggle="modal" >Sell Bitcoin</a>    
+                          <a class="dropdown-item" href="#giftcardsModal" data-toggle="modal">Sell Giftcard</a>
+                      </div>
+                  </div>
+
+                  <!-- Giftcards Modal -->
+                  <div class="modal" id="giftcardsModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-container" >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="h4 gradient-txt text-center my-3">GOT GIFTCARDS FOR SELL?</div>
+                                <p class="text-center graytxt">choose your prefered product to continue</p>
+                                <div class="mod-content">
+                                  <a href="#amazon"data-toggle="modal" ><img  class="img-responsive"  src="img\Amazon.svg" alt=""></a>
+                                  <a href="#itunes"data-toggle="modal"><img  class="img-responsive" src="img\iTunes.svg" alt=""></a>
+                                  <a href="#googlePlay"data-toggle="modal"><img  class="img-responsive" src="img\Google Play.svg" alt=""></a>
+                                  <a href="#steam" data-toggle="modal"><img  class="img-responsive" src="img\Steam.svg" alt=""></a>
+                                  <a href="#others"data-toggle="modal"><img  class="img-responsive" src="img\Others.svg" alt=""></a>
+                                </div>
+                            </div>                   
+                          </div>
+                      </div>
+
+                      <!-- Amazon card Modal -->
+                      <div class="modal" id="amazon" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Amazon.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Amazon card on this platform</div>
+                                  <hr class="hr-line">          
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="naira">
+                                       <input class="dash-border" style="border: 1.5px dashed #FD749B !important; border-radius: 5px; border-style: none;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>          
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <!-- itunes card Modal-->
+                      <div class="modal" id="itunes" role="dialog" tabindex="-1" aria-labelledby="itunes Conversion rate" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5itunes.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\iTunes.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every App Store itunes card on this platform</div>
+                                  <hr class="hr-line">            
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                      <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>            
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <!--Google Play Modal -->
+                      <div class="modal" id="googlePlay"  role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5play.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Google Play.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Google Play card on this platform</div>
+                                  <hr class="hr-line">
+                                  <div class="giftcard-content">
+                                    <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>        
+                                  </div>
+                              </div>          
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Steam card Modal -->
+                      <div class="modal" id="steam" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5steam.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Steam.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Steam card on this platform</div>
+                                  <hr class="hr-line">
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <!-- Other Cards Modal -->
+                      <div class="modal" id="others" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5others.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Others.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text graytxt"><strong>N360.00</strong> is our conversion rate for every Voucher on this platform</div>
+                                  <hr class="hr-line">
+                                  <div class="giftcard-content">
+                                    <p class="graytxt">The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Type</option>
+                                      </select>
+                                      <select style="font-size: 14px;" class="form-control form-control-lg">
+                                        <option class="option">Card Currency</option>
+                                      </select>
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Amount">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>                
+                  </div>  
+                  <!-- giftcards Modal ends here-->           
+                  
+                  <!-- Bitcoin Modals -->
+                  <div class="modal" id="bitcoinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered bitcoin-modal" >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="h4 gradient-txt text-center my-3">GOT GIFTCARDS FOR SELL?</div>
+                                <p class="text-center">choose your prefered product to continue</p>
+                                <div class="btc-Etc-modal">
+                                    <a href="#bitcoin"data-toggle="modal" ><img  class="img-responsive"  src="img\Card-1.svg" alt=""></a>
+                                    <a href="#ethereum"data-toggle="modal"><img  class="img-responsive" src="img\Card-2.svg" alt=""></a>
+                               </div>
+                            </div>     
+                          </div>
+                      </div>
+                      <div class="modal" id="bitcoin" role="dialog" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered coin-modal" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5bitcoin.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Card-1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text"><strong>N360.00</strong> is our conversion rate for 0.1 BTC on this platform</div>
+                                  <hr class="hr-line">           
+                                  <div class="giftcard-content">
+                                    <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Bitcoin Value">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px; border-style: none;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- Ethereum Modal-->
+                      <div class="modal" id="ethereum" role="dialog" tabindex="-1" aria-labelledby="itunes Conversion rate" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered coin-modal" >
+                            <div class="modal-content">
+                              <div class="amazon-radial">
+                                <img class="ellipse" src="img\Ellipse 5ETH.png" alt="">
+                                <div class="amazon">
+                                  <img  class="img-amazon" src="img\Card-2.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="conversion-text"><strong>N360.00</strong> is our conversion rate for every 0.1 ETH on this platform</div>
+                                  <hr class="hr-line">                                         
+                                  <div class="giftcard-content">
+                                    <p>The total value you derived here will be the amount you'll be recieving during the total transaction process</p>
+                                    <div class="modal-form">
+                                      <input style="font-size: 14px;" class="form-control form-control-lg amount" type="text" placeholder="Ethereum Value">
+                                      <div class="">
+                                       <input class="dash-border gradient" style="border: 1.5px dashed #FD749B !important; border-radius: 5px;" type="text" placeholder="#0.00">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn">proceed</button>
+                                      </div>
+                                    </div>                    
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                </li>
+                <li class="menu-item">
+                  <a href="#loginModal" class="button btn" data-toggle="modal" >Login</a>
+
+                  <!-- Login Modal -->
+                  <div class="modal" id="loginModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-container" >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="h4 gradient-txt text-center my-3">Welcome back!</div>
+                                <p class="text-center graytxt">Kindly fill in your login details to proceed</p>
+                                <div class="mod-content">
+                                    <div class="modal-form">
+                                      <div class="">
+                                        <input class="form-control form-control-lg amount" type="email" placeholder="Email">
+                                      </div>
+                                      <div class="">
+                                        <input class="form-control form-control-lg amount" type="email" placeholder="Password">
+                                      </div>
+                                      <div class="modal-btn">
+                                        <button class="proceed-btn" type="submit">LOGIN</button>
+                                      </div>
+                                       <p class="text-center mt-3 graytxt">Don’t have an account yet?  <a href="#signup" class="strong blacktxt" data-toggle="modal">Sign Up</a></p>
+                                    </div> 
+                                </div>
+                            </div>                   
+                          </div>
+                      </div>
+
+                      <!-- Signup card Modal -->
+                      <div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-box" >
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                  <div class="h4 gradient-txt text-center my-3">Sign Up</div>
+                                  <p class="text-center graytxt">There’s no charge upon registration</p>
+                                  <div class="mod-content">
+                                      <div class="modal-form">
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="text" placeholder="Full Name">
+                                        </div>
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="email" placeholder="Email">
+                                        </div>
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="password" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="">
+                                          <input class="form-control form-control-lg" type="password" placeholder="Password">
+                                        </div>
+                                        <div class="modal-btn">
+                                          <button class="proceed-btn" type="submit">SIGNUP</button>
+                                        </div>
+                                         <p class="text-center mt-3 graytxt">Already a member?  <a href="#" class="strong blacktxt" data-toggle="modal">Login</a></p>
+                                      </div> 
+                                  </div>
+                              </div>                   
+                            </div>
+                          </div>
+                      </div>  
+                  </div> 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--End of Header-->
+	<main>
+        <section class="page-banner gradient-back curve-bottom w-100">
+			<div class="container">
+				<div class="row m-0 p-0">
+					<div class="col-12 col-md-6">
+						<div class="inner-container mt-4 whitetxt">                            
+                            <p class="whitetxt"><a href="index.html" class="whitetxt text-decoration-none">HOME/</a> ABOUT</p>
+                            <h1 class="mt-4 font-weight-bolder">Great service, Professional Support</h1>
+							<p class="big pt-2">CoinBase is a platform for trading your bitcoin and giftcard at the best rate, why not give us a trial.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<img src="img/img1.svg" alt="service-img" class="img-responsive img-zoom">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="whiteback">
+			<div class="container">
+				<p class="ceo gradient-txt text-center mt-5 mx-auto font-weight-bold">"Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit at vestibulum"</p>				
+				<div class="divider center"></div>		
+				<p class="small pt-2 text-center">Ramon Ridwan • CEO CoinBase</p>
+			</div>
+		</section>
+		<section class="abt w-100">
+			<div class="container">
+				<div class="row m-0 p-0">
+					<div class="col-12">
+						<div class="inner-container gradient-back">
+							<div class="w-100 text-center p-5 whiteback"> 
+					           <div class="w-75 mx-auto sect-head">
+									<img src="img/img2.svg" alt="" class="abt-pic img-responsive img-zoom center pb-5">
+									<h3 class="gradient-txt text-center pb-1">About CoinBase</h3>
+									<div class="divider center"></div>
+								</div>
+								<p class="text-center mx-auto pb-5 graytxt">
+									CoinBase is an online site and a p2admin platform that allows users to buy, sell and/ or exchange digital and fiat assets safely. Owned and managed by CoinBase Business Services established and Incoporated in Nigeria.
+								</p>
+								<div class="justify-content-center mx-auto row center icon">
+									<img class="img-responsive" src="img/Group2.svg" alt="">
+									<img class="img-responsive" src="img/medal.svg" alt="">
+									<img class="img-responsive" src="img/customer-review.svg" alt="">
+									<img class="img-responsive" src="img/Group3.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec-date whiteback">
+			<div class="container mb-5">
+                <h2 class="gradient-txt text-center font-weight-bolder pt-5">Our history</h2>
+                <div class="divider center"></div>
+                <div class="row center my-5 date">
+                    <div class="col-6 mt-5 left-date">
+						<div>
+							<h4 class="gradient-txt">
+								May, 2010
+							</h4>
+							<p class="mt-4">
+								Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
+							</p>
+                    	</div>
+						<div class="left-date-p2 pt-5">
+							<h4 class="gradient-txt">
+								May, 2019
+							</h4>
+							<p class="mt-4">
+								Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
+							</p>
+						</div>
+                    </div>
+                    <div class="col-6 d-flex right-col">
+                        <img src="img/tree.svg" alt="">
+                        <div class="right-date">
+                            <h4 class="gradient-txt">
+                        	   May, 2017
+                            </h4>
+                            <p class="mt-4">
+                                Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				<p class="small text-center font-weight-bold">TO BE CONTINUE...</p>
+			</div>
+        </section>
+		<section class="whiteback">
+			<div class="container">
+				<div class="w-100 row m-0 p-0 px-4">
+					<div class="col-12 sect-head text-center mb-4">
+						<h3 class="gradient-txt font-weight-bolder">Meet the team</h3>
+						<div class="divider center"></div>
+					</div>
+					<div class="col-10 mx-auto mt-4">						
+						<div class="team-carousel-center slider">
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">Founder</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>									
+								</div>
+							</div>
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">CEO</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>
+								</div>
+							</div>
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">Accountant</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>
+								</div>
+							</div>
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">Lawyer</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>
+								</div>
+							</div>
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">Treasurer</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>
+								</div>
+							</div>
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">Human Resource Manager</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>
+								</div>
+							</div>
+							<div class="team-item" style="background-image: url('img/1.svg');background-size:cover;background-repeat:no-repeat;">
+								<div>
+									<h5 class="whitetxt">Secretrary</h5>
+									<p class="whitetxt mt-2">Amanda Roth</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="whiteback plustop">
+			<div class="container">
+				<div class="w-100 row my-5 p-0">
+					<div class="col-12 sect-head text-center">
+						<h3 class="gradient-txt font-weight-bolder">Subscribe our newsletter</h3>
+						<div class="divider center"></div>
+						<p class="graytxt">Subscribe to our newsletter for daily/weekly update of our products and services.</p>
+					</div>
+					<div class="col-12 col-md-6 mx-auto my-4">
+						<form>
+							<div class="form-row align-items-center justify-content-center">
+							    <div class="col-12 col-md-7 mr-md-4 input-gradient-border">
+							      <input type="text" class="form-control border-0" id="inlineFormInput" placeholder="Email ">
+							    </div>
+							    <div class="col-6 col-md-4 mt-3 mt-md-0 ml-3 m-md-0 p-0 text-right">
+							      <button type="submit" class="btn w-100 whitetxt">DISCOVER</button>
+							    </div>
+							  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>			 
+	</main>
+
+	<footer>
+		<div class="container">		
+	        <div class="row m-0 p-0 w-100">
+	        	
+	        	<div class="col-12 col-md-6 col-xl-4 text-center text-md-left">
+	        		<a href="#" class="d-inline-block mb-4">
+	        			<img src="img/logofooter.svg" class="img-fluid">
+	        		</a>
+	        		<p class="small gray2 my-3">Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu rhoncus augue. Fusce vel metus pharetra, fermentum</p>
+	        		<div class="row m-0 p-0 social-link mb-5 text-center text-md-left justify-content-left">
+	                    <a href="#" class="d-inline-block mr-3 whitetxt"><i class=" link fab fa-google-plus-g"></i></a>
+	                    <a href="#" class="d-inline-block mr-3 whitetxt"><i class=" link fab fa-facebook-square"></i> </a>
+	                    <a href="#" class="d-inline-block mr-3 whitetxt"><i class=" link fab fa-twitter"></i></a>
+	                    <a href="#" class="d-inline-block mr-3 whitetxt"><i class=" link fab fa-instagram"></i></a>
+	        		</div>
+	        	</div><div class="col-12  col-md-6 col-xl-2 text-center text-md-left">
+	        		<h5 class="whitetxt mb-4">CoinBase Links</h5>
+	        		<ul class="secondary-menu">
+	        			<li><a href="#" class="gray2">Home</a></li>
+	        			<li><a href="#" class="gray2">About Us</a></li>
+	        			<li><a href="#" class="gray2">Blog</a></li>
+	        			<li><a href="#" class="gray2">Sell</a></li>
+	        			<li><a href="#" class="gray2">Contact us</a></li>
+	        		</ul>
+	        	</div>
+	        	<div class="col-12  col-md-6 col-xl-3 text-center text-md-left">
+	        		<h5 class="whitetxt mb-4">Contact Us</h5>
+	        		<ul class="secondary-menu">
+	        			<li><a href="#" class="gray2">(+123) 456789078</a></li>
+	        			<li><a href="#" class="gray2">Coinbase@yahoo.com</a></li>
+	        			<li><a href="#" class="gray2">Address goes here</a></li>
+	        			<li class="mt-5"><a href="#" class="gray2">Download Our App</a></li>
+	        		</ul>
+	        	</div>
+	        	<div class="col-12  col-md-6 col-xl-3 text-center text-md-left">
+	        		<h5 class="whitetxt mb-4">CoinBase Instagram</h5>
+	        		<ul class="instagram-feed row p-0 m-0 w-100">
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        			<li class="col-6 col-sm-4 col-md-3"><img src="img/ig-picture.png" class="img-fluid"></li>
+	        		</ul>
+	        	</div>
+	        	<div class="col-12 my-4 my-xl-0 text-center text-md-left">
+	        		<p class="gray3">© 2019  Designed by Cr8tiv_yemmy | 2020 Developed by Team_Legends</p>
+	        	</div>
+	        </div>
+			
+		</div>
+	</footer> <!--   Core JS Files   -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/javascript">
+	 
+		$(document).on('ready', function() {
+			$('.team-carousel-center').slick({
+			centerMode: true,
+			autoplay: true,
+			infinite: true,
+			centerPadding: '-50px',
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			responsive: [
+				{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '-30px',
+					slidesToShow: 3
+				}
+				},
+				{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '-20px',
+					slidesToShow: 1
+				}
+				}
+			]
+			});
+		});
+	</script>
+</body>
+</html>
