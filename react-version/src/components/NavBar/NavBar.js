@@ -1,19 +1,44 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../Home/Home.css";
-//import images
+import "../SignIn/SignIn.css";
+import { NavLink, Link } from "react-router-dom";
+import SignIn from "../SignIn/SignIn";
+import SignUp from "../SignUp/SignUp";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
+//import images
 import Logo from "../img/Logo.svg";
 
 const NavBar = () => {
+  //state
+  const [logModal, setLoginModal] = useState(null);
+  const [signUpModal, setSignupModal] = useState(false);
   //refs
   const refMenu = useRef();
   const priMenu = useRef();
-  //state
 
+  //toggleMenu is for responsive toggler
   const toggleMenu = () => {
     refMenu.current.classList.toggle("toggled");
     priMenu.current.classList.toggle("open");
   };
+
+  const handleLoginModal = () => {
+    console.log("modal on", logModal);
+    return setLoginModal(true);
+  };
+  const closeLoginModal = () => {
+    setLoginModal(false);
+  };
+  //sign up modal
+  const openSignUpModal = () => {
+    setSignupModal(true);
+  };
+  const closeSignUpModal = () => {
+    setSignupModal(false);
+  };
+  //signup modal ends
   return (
     <header>
       <nav className="navbar m-0 p-0">
@@ -36,23 +61,31 @@ const NavBar = () => {
                 className="primary-menu row justify-content-between align-items-center h-100 p-0 m-0"
                 ref={priMenu}
               >
-                <li className="menu-item active">
-                  <a href="#">Home</a>
+                <li className="menu-item ">
+                  <NavLink to="/" activeStyle={{ color: "#cfe5cf" }}>
+                    Home
+                  </NavLink>
                 </li>
                 <li className="menu-item">
-                  <a href="#">About Us</a>
+                  <NavLink to="/about" activeStyle={{ color: "#e7305b" }}>
+                    About Us
+                  </NavLink>
                 </li>
                 <li className="menu-item">
-                  <a href="#">Blog</a>
+                  <NavLink to="/blog" activeStyle={{ color: "#e7305b" }}>
+                    Blog
+                  </NavLink>
                 </li>
                 <li className="menu-item">
-                  <a href="#">Contact Us</a>
+                  <NavLink to="/contact" activeStyle={{ color: "#e7305b" }}>
+                    Contact Us
+                  </NavLink>
                 </li>
                 <li className="menu-item offset-md-0">
                   <div className="dropdown">
-                    <a
+                    <NavLink
                       className="dropdown-toggle whitetxt"
-                      href="#"
+                      to="/sell"
                       role="button"
                       id="dropdownMenu"
                       data-toggle="dropdown"
@@ -60,7 +93,7 @@ const NavBar = () => {
                       aria-expanded="false"
                     >
                       Sell Bitcoin/ Giftcard
-                    </a>
+                    </NavLink>
 
                     <div
                       className="dropdown-menu dropdown-menu-right"
@@ -78,93 +111,62 @@ const NavBar = () => {
                         className="modal fade"
                         id="sellBitcoin"
                         role="dialog"
-                      >
-                        <div className="modal-dialog">
-                          {/* <!-- Modal content--> */}
-                          <div className="modal-content">
-                            <div className="modal-header">
-                              <button
-                                type="button"
-                                className="close"
-                                data-dismiss="modal"
-                              >
-                                &times;
-                              </button>
-                              <h4 style={{ color: "red" }}>
-                                <span className="glyphicon glyphicon-lock"></span>{" "}
-                                Login
-                              </h4>
-                            </div>
-                            <div className="modal-body">
-                              <form role="form">
-                                <div className="form-group">
-                                  <label for="usrname">
-                                    <span className="glyphicon glyphicon-user"></span>{" "}
-                                    Username
-                                  </label>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    id="usrname"
-                                    placeholder="Enter email"
-                                  />
-                                </div>
-                                <div className="form-group">
-                                  <label for="psw">
-                                    <span className="glyphicon glyphicon-eye-open"></span>{" "}
-                                    Password
-                                  </label>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    id="psw"
-                                    placeholder="Enter password"
-                                  />
-                                </div>
-                                <div className="checkbox">
-                                  <label>
-                                    <input type="checkbox" value="" checked />
-                                    Remember me
-                                  </label>
-                                </div>
-                                <button
-                                  type="submit"
-                                  className="btn btn-default btn-success btn-block"
-                                >
-                                  <span className="glyphicon glyphicon-off"></span>{" "}
-                                  Login
-                                </button>
-                              </form>
-                            </div>
-                            <div className="modal-footer">
-                              <button
-                                type="submit"
-                                className="btn btn-default btn-default pull-left"
-                                data-dismiss="modal"
-                              >
-                                <span className="glyphicon glyphicon-remove"></span>{" "}
-                                Cancel
-                              </button>
-                              <p>
-                                Not a member? <a href="#">Sign Up</a>
-                              </p>
-                              <p>
-                                Forgot <a href="#">Password?</a>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      ></div>
                       <a className="dropdown-item" href="#">
                         Sell Giftcard
                       </a>
                     </div>
                   </div>
                 </li>
-                <li className="menu-item">
-                  <a href="#" className="button btn">
+                {/* <li className="menu-item">
+                  <NavLink
+                    to="/login"
+                    className="button btn"
+                    style={{ transition: "all ease 0.3s", marginTop: "0px" }}
+                    onClick={handleModal}
+                    data-toggle="modal"
+                    data-target="#signUp"
+                    activeStyle={{ color: "#cfe5cf" }}
+                  >
                     Login
-                  </a>
+                  </NavLink>
+                </li> */}
+                <li className="menu-item">
+                  <div className="dropdown">
+                    <NavLink
+                      className="dropdown-toggle whitetxt button btn"
+                      style={{ transition: "all ease 0.3s", marginTop: "0px" }}
+                      role="button"
+                      to=" "
+                      data-toggle="modal"
+                      id="dropdownMenu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      LOGIN
+                    </NavLink>
+
+                    <div
+                      className="dropdown-menu dropdown-menu-right"
+                      aria-labelledby="dropdownMenu"
+                    >
+                      <Link
+                        className="dropdown-item"
+                        onClick={handleLoginModal}
+                      >
+                        Log In
+                      </Link>
+
+                      {/* <!-- Modal --> */}
+                      <div className="modal fade" id="" role="dialog"></div>
+                      <Link className="dropdown-item" onClick={openSignUpModal}>
+                        Sign UP
+                      </Link>
+                    </div>
+                    <SignIn show={logModal} click={closeLoginModal} />
+                    <SignUp show={signUpModal} click={closeSignUpModal} />
+                  </div>
                 </li>
               </ul>
             </div>
