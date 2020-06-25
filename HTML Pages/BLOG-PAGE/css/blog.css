@@ -12,6 +12,7 @@
     border-radius: 30px;
     margin-top:60px;
 }
+
 .blog-info:hover{
     box-shadow: 2px 2px 10px rgb(234, 234, 234) , -2px -2px 10px rgb(228, 227, 227);
 }
@@ -29,6 +30,11 @@
     background-repeat: no-repeat;
     border-top-right-radius: 30px;
 }
+
+.blog-info.mb-10 {
+    margin-bottom: 10rem;
+}
+
 .blog-info-img1{
     width:100%;
     height:auto;
@@ -160,10 +166,6 @@
         height: auto;
     }
     
-    .blog-info {
-    /* padding: 2rem; */
-    height: auto;
-}
 }
 @media (min-width:700px){
 
